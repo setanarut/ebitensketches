@@ -7,3 +7,9 @@
 ```console
 go run github.com/setanarut/ebitensketches/examples/curvetext@latest
 ```
+
+## Double pendulum
+
+```console
+go run github.com/setanarut/ebitensketches/examples/doublependulum@latest
+```
