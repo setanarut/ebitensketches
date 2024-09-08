@@ -3,7 +3,6 @@ module github.com/setanarut/ebitensketches
 go 1.23.1
 
 require (
-	github.com/gio-eui/md3-fonts v0.0.0-20230728142241-576669bd900e
 	github.com/hajimehoshi/ebiten/v2 v2.8.0-alpha.3.0.20240822150030-a3d084e2de1c
 	github.com/setanarut/gog v1.1.1
 )

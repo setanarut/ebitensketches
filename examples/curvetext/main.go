@@ -6,10 +6,10 @@ import (
 	"image/color"
 	"log"
 
-	"github.com/gio-eui/md3-fonts/fonts/robotomono/robotomonosemibold"
 	"github.com/hajimehoshi/ebiten/v2"
 	"github.com/hajimehoshi/ebiten/v2/text/v2"
 	"github.com/setanarut/gog"
+	"golang.org/x/image/font/gofont/gomono"
 )
 
 var (
@@ -25,14 +25,14 @@ var (
 type Game struct{}
 
 func main() {
-	src, err := text.NewGoTextFaceSource(bytes.NewReader(robotomonosemibold.Data))
+	src, err := text.NewGoTextFaceSource(bytes.NewReader(gomono.TTF))
 	if err != nil {
 		log.Fatal(err)
 	}
 	roboto = &text.GoTextFace{Source: src, Size: 50}
 	path.Translate(400, 200).Reverse().Close()
 	pathlen = path.Length()
-	dio.ColorScale.ScaleWithColor(color.RGBA{219, 86, 32, 255})
+	dio.ColorScale.ScaleWithColor(color.RGBA{0, 195, 255, 255})
 	letters = text.AppendGlyphs(letters, txt, roboto, &text.LayoutOptions{})
 	ebiten.SetWindowSize(screenSize.X, screenSize.Y)
 	ebiten.SetScreenClearedEveryFrame(false)

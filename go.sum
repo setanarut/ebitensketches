@@ -6,8 +6,6 @@ github.com/ebitengine/hideconsole v1.0.0 h1:5J4U0kXF+pv/DhiXt5/lTz0eO5ogJ1iXb8Yj
 github.com/ebitengine/hideconsole v1.0.0/go.mod h1:hTTBTvVYWKBuxPr7peweneWdkUwEuHuB3C1R/ielR1A=
 github.com/ebitengine/purego v0.8.0-alpha.4 h1:Dg9xRGC3giyQedfISyHH94eQM0md4a84+HHr7KBBH/Q=
 github.com/ebitengine/purego v0.8.0-alpha.4/go.mod h1:SQ56/omnSL8DdaBSKswoBvsMjgaWQyxyeMtb48sOskI=
-github.com/gio-eui/md3-fonts v0.0.0-20230728142241-576669bd900e h1:NH/pr6VZAvhfzGNu9pdOwUdK3LhKjeQbTJZ/3QRH8kM=
-github.com/gio-eui/md3-fonts v0.0.0-20230728142241-576669bd900e/go.mod h1:3aaRkAjTjYp7lS5i69tatzjumA6Ppzo5TCMLm0HG1Vs=
 github.com/go-text/typesetting v0.1.1 h1:bGAesCuo85nXnEN5LmFMVGAGpGkCPtHrZLi//qD7EJo=
 github.com/go-text/typesetting v0.1.1/go.mod h1:d22AnmeKq/on0HNv73UFriMKc4Ez6EqZAofLhAzpSzI=
 github.com/go-text/typesetting-utils v0.0.0-20231211103740-d9332ae51f04 h1:zBx+p/W2aQYtNuyZNcTfinWvXBQwYtDfme051PR/lAY=
@@ -16,7 +14,6 @@ github.com/hajimehoshi/bitmapfont/v3 v3.2.0-alpha.3 h1:gSxacUXbVZcffXOHl/BWGvf61
 github.com/hajimehoshi/bitmapfont/v3 v3.2.0-alpha.3/go.mod h1:kTSlhZN34vbL4Okwi+H9N99DwGTFZ97f6VJKFNqMwIM=
 github.com/hajimehoshi/ebiten/v2 v2.8.0-alpha.3.0.20240822150030-a3d084e2de1c h1:BjmnQ+zvYnVLAJwICwZMvpV3BTJ4gi94UkK72IsyosU=
 github.com/hajimehoshi/ebiten/v2 v2.8.0-alpha.3.0.20240822150030-a3d084e2de1c/go.mod h1:mRhxcBz6J6vZ60q9Aky4MDnOCKid4zzUnZZSgORZm3Q=
-github.com/jakecoffman/cp v1.2.1 h1:zkhc2Gpo9l4NLUZfeG3j33+3bQD7MkqPa+n5PdX+5mI=
 github.com/jakecoffman/cp/v2 v2.0.2 h1:HN+youpOhd8xgWYw5amqiJFLoreAIB/uI/EEzZohLjA=
 github.com/jakecoffman/cp/v2 v2.0.2/go.mod h1:Q0hFU7Kk6PMw4dwgFtvBC6O4KTm7ewiLuHrXtHMicyU=
 github.com/jezek/xgb v1.1.1 h1:bE/r8ZZtSv7l9gk6nU0mYx51aXrvnyb44892TwSaqS4=
