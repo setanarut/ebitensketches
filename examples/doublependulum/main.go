@@ -87,6 +87,7 @@ func main() {
 		dt:               0.2,
 	}
 
+	ebiten.SetScreenClearedEveryFrame(false)
 	ebiten.SetWindowSize(width, height)
 	ebiten.SetWindowTitle("Double Pendulum")
 

@@ -8,17 +8,18 @@ import (
 
 	"github.com/hajimehoshi/ebiten/v2"
 	"github.com/hajimehoshi/ebiten/v2/text/v2"
-	"github.com/setanarut/gog"
+	"github.com/setanarut/gog/v2/path"
+	"github.com/setanarut/gog/v2/shapes"
 	"golang.org/x/image/font/gofont/gomono"
 )
 
 var (
 	roboto        *text.GoTextFace
 	letters       []text.Glyph
-	screenSize              = image.Point{800, 400}
-	dio                     = &ebiten.DrawImageOptions{Filter: ebiten.FilterLinear}
-	path          *gog.Path = gog.Lemniscate(300, 348)
-	txt                     = "A dead simple 2D game engine for Go"
+	screenSize               = image.Point{800, 400}
+	dio                      = &ebiten.DrawImageOptions{Filter: ebiten.FilterLinear}
+	lemn          *path.Path = shapes.Lemniscate(300, 348)
+	txt                      = "A dead simple 2D game engine for Go"
 	tick, pathlen float64
 )
 
@@ -30,8 +31,8 @@ func main() {
 		log.Fatal(err)
 	}
 	roboto = &text.GoTextFace{Source: src, Size: 50}
-	path.Translate(400, 200).Reverse().Close()
-	pathlen = path.Length()
+	lemn.Translate(400, 200).Reverse().Close()
+	pathlen = lemn.Length()
 	dio.ColorScale.ScaleWithColor(color.RGBA{0, 195, 255, 255})
 	letters = text.AppendGlyphs(letters, txt, roboto, &text.LayoutOptions{})
 	ebiten.SetWindowSize(screenSize.X, screenSize.Y)
@@ -57,7 +58,7 @@ func (g *Game) Draw(screen *ebiten.Image) {
 			if l > pathlen {
 				l = l - pathlen
 			}
-			point, angle := path.PointAngleAtLength(l)
+			point, angle := lemn.PointAngleAtLength(l)
 			dio.GeoM.Reset()
 			dio.GeoM.Translate(-float64(glyph.Image.Bounds().Dx())/2, -(glyph.OriginY - glyph.Y))
 			dio.GeoM.Rotate(angle)
